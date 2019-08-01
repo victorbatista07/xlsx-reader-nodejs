@@ -4,4 +4,4 @@ COPY package.json .
 
 RUN apk update && npm install && npm install -g nodemon
 
-CMD ["nodemon", "app.js"]
+CMD ["npm", "start"]
