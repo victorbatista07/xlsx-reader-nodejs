@@ -1,12 +1,20 @@
 {
-    "name": "e-otica",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app"
-    },
-    "author": "",
-    "license": "ISC"
-  }  
+  "name": "e-otica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha app/tests/",
+    "coverage": "nyc --reporter=html mocha app/controllers",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "csv-parser": "^2.3.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
+  }
+}

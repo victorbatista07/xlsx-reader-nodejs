@@ -1,3 +1,6 @@
-import { listen } from './config/server';
+require('dotenv/config');
 
-listen(3000, () => console.log('Connected on port 3000.'));
+const app = require('./config/server');
+const port = process.env.PORT;
+
+app.listen(port, () => console.log(`Connected on port ${port}.`));

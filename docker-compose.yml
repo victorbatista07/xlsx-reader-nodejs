@@ -5,6 +5,6 @@ services:
     container_name: node
     working_dir: /app
     ports:
-      - "8080:3000"
+      - "${PORT}:${PORT}"
     volumes:
       - ${PWD}:/app
