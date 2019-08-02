@@ -4,8 +4,8 @@ const { join } = require('path');
 app.get('/produtos', (req, res) =>
     require(join(__dirname, '../controllers/produtos')).getProdutos(req, res));
 
-    // app.get('/produto/${id}', (req, res) =>
-    // require(join(__dirname, '../controllers/produtos')).getProdutoById(req, res));
+    app.get('/produto/${id}', (req, res) =>
+    require(join(__dirname, '../controllers/produtos')).getProdutoByID(req, res));
 
 
     // app.post('/produto/add', (req, res) =>
