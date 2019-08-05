@@ -4,12 +4,11 @@ const { join } = require('path');
 app.get('/produtos', (req, res) =>
     require(join(__dirname, '../controllers/produtos')).getProdutos(req, res));
 
-    app.get('/produto/${id}', (req, res) =>
+    app.get('/produto/:id', (req, res) =>
     require(join(__dirname, '../controllers/produtos')).getProdutoByID(req, res));
 
-
-    // app.post('/produto/add', (req, res) =>
-    // require(join(__dirname, '../controllers/produtos')).createProduto(req, res));
+     app.post('/produto/add', (req, res) =>
+     require(join(__dirname, '../controllers/produtos')).createProduto(req, res));
 
 //     GET /produtos
 // Retorna um JSON com todos produtos
