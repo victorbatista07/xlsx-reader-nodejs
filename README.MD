@@ -4,7 +4,9 @@
 
  - Docker version ^18.09
  - Docker-Compose version 1.24
- Ou:
+ &nbsp;
+ **Ou:**
+ &nbsp;
  - Node version 8.10^
  - NPM version ^3.5
 
